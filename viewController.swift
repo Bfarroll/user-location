@@ -31,7 +31,18 @@ extension ViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         let newLocations = locations.last
+        
+        
+        if let newLocations = newLocations {
         print(newLocations)
+        locationManager.stopUpdatingLocation()
+            
+        
+        
+        }
+        
+        
+        
     }
     
     
